@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>E-Commerce Online Shop</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- Javascript -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  		<script>		   
+		    $( function() {
+			    $( "#slider-range" ).slider({
+			      range: true,
+			      min: 0,
+			      max: 10000,
+			      values: [ 1000, 3000 ],
+			      slide: function( event, ui ) {
+			        $( "#amount" ).val( "Rs." + ui.values[ 0 ] + " - Rs." + ui.values[ 1 ] );
+			      }
+			    });
+			    $( "#amount" ).val( "Rs." + $( "#slider-range" ).slider( "values", 0 ) +
+			      " - Rs." + $( "#slider-range" ).slider( "values", 1 ) );
+			});
+		 </script>
+ 	</head>
+<body>
+
+	<header>
+		<div class="container">
+			
+
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+	<div class="container">
+		<main>
+			<div class="breadcrumb">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li> / </li>
+					<li>Shop</li>
+				</ul>
+			</div> <!-- End of Breadcrumb-->
+
+			<div class="new-product-section shop">
+				<div class="sidebar">
+					<div class="sidebar-widget">
+						<h3>Category</h3>
+						<ul>
+							<li><a href="">Dog's Clothes</a></li>
+							<li><a href="">Cat's Shoes</a></li>
+							<li><a href="">Pet's Assesories</a></li>
+							<li><a href="">Pet's Handbags</a></li>
+							<li><a href="">Pet's Glasses</a></li>
+
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3>Range Filter</h3>
+						<p>
+						  <label for="amount"></label>
+						  <input type="text" id="amount" readonly style="border:0; color:#F0E68C;  margin-bottom: 5px;">
+						</p>						 
+						<div id="slider-range"></div>
+					</div>
+				</div>
+				<div class="product-content">
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/508260842/photo/group-of-chihuahuas-dressed-wearing-glasses-and-bow-ties.jpg?s=2048x2048&w=is&k=20&c=Eelzsz5wN7mdNbrh9tHGNNSlFwW5XdNRr9waFf4c-m8=">
+						</a>
+						<div class="product-detail">
+							<h3>Dog's</h3>
+							<h2>Gray Color Dog's Watch</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4500/-</p>
+						</div>						
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/509670518/photo/funny-valentines-day-dog-scarf-and-sunglasses.jpg?s=2048x2048&w=is&k=20&c=-qYAfYYACFtA85QR2_E3cvFkyOjS85sz3CqmUFUYKwg=">
+						</a>
+						<div class="product-detail">
+							<h3>Dog's</h3>
+							<h2>Levi's Jeans Pant</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.2000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/1188426684/photo/two-chihuahua-for-christmas.jpg?s=612x612&w=0&k=20&c=v39HFt6mi1pXd9XFpiHxoAy7uZ37UefPn8JOgHmybqQ=">
+						</a>
+						<div class="product-detail">
+							<h3>Dog's</h3>
+							<h2>Black</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/1188426684/photo/two-chihuahua-for-christmas.jpg?s=612x612&w=0&k=20&c=v39HFt6mi1pXd9XFpiHxoAy7uZ37UefPn8JOgHmybqQ=">
+						</a>
+						<div class="product-detail">
+							<h3>Dog'ss</h3>
+							<h2>Nick Black Sneakers</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3200/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/1188426684/photo/two-chihuahua-for-christmas.jpg?s=612x612&w=0&k=20&c=v39HFt6mi1pXd9XFpiHxoAy7uZ37UefPn8JOgHmybqQ=">
+						</a>
+						<div class="product-detail">
+							<h3>Cloths</h3>
+							<h2>Wood Frame Sun Glass</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.1200/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/483797154/photo/chihuahua-dressed.jpg?s=612x612&w=0&k=20&c=QZ4Bi4E3kGz9j6aNA18ATMhLnfbdwVjY2OdQG2yUuVs=">
+						</a>
+						<div class="product-detail">
+							<h3>Cat's</h3>
+							<h2>Leather Hand Bag</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3800/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/483797154/photo/chihuahua-dressed.jpg?s=612x612&w=0&k=20&c=QZ4Bi4E3kGz9j6aNA18ATMhLnfbdwVjY2OdQG2yUuVs=">
+						</a>
+						<div class="product-detail">
+							<h3>Dog's</h3>
+							<h2>Dog's Sneaker</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3500/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="https://media.istockphoto.com/id/1457006932/photo/a-luxurious-white-cat-in-a-golden-crown-and-a-red-robe-sitting-on-a-white-background.webp?b=1&s=170667a&w=0&k=20&c=6PYzgQvySicZ06a8aM5jeUBJGl1fTs3UEyk1x2oI-OY=">
+						</a>
+						<div class="product-detail">
+							<h3>Cat's </h3>
+							<h2>Brown Leather Hand Bag</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.5200/-</p>
+						</div>
+					</div>
+				</div>				
+			</div> <!-- New Product Section -->	
+			<div class="load-more">
+				<a href="#">Load More</a>
+			</div>		
+		</main> <!-- Main Area -->
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-widget">
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Important Link</h3>
+					</div>
+					<div class="widget-content">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="refund.html">Refund Policy</a></li>
+							<li><a href="terms.html">Terms & Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Information</h3>
+					</div>
+					<div class="widget-content">
+						<ul>
+							<li><a href="account.html">My Account</a></li>
+							<li><a href="orders.html">My Orders</a></li>
+							<li><a href="cart.html">Cart</a></li>
+							<li><a href="checkout.html">Checkout</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Follow us</h3>
+					</div>
+					<div class="widget-content">
+						<div class="follow">
+							<ul>
+								<li><a href="#"><img src="img/icons/facebook.png"></a></li>
+								<li><a href="#"><img src="img/icons/twitter.png"></a></li>
+								<li><a href="#"><img src="img/icons/instagram.png"></a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="widget-heading">
+						<h3>Subscribe for Newsletter</h3>
+					</div>
+					<div class="widget-content">
+						<div class="subscribe">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" name="subscribe" placeholder="Email">
+									<img src="img/icons/paper_plane.png">
+								</div>
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div> <!-- Footer Widget -->
+			<div class="footer-bar">
+				<div class="copyright-text">
+					<p>Copyright 2021 - All Rights Reserved</p>
+				</div>
+				<div class="payDogt-mode">
+					<img src="img/icons/paper_money.png">
+					<img src="img/icons/visa.png">
+					<img src="img/icons/mastercard.png">
+				</div>
+			</div> <!-- Footer Bar -->
+		</div>
+	</footer> <!-- Footer Area -->
+
+</body>
+
+</html>
